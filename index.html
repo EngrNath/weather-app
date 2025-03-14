@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-btn">Search</button>
+            <button id="location-btn">Get My Location</button>
+        </div>
+        <div id="weather-info">
+
+            <!-- Current weather will be displayed here -->
+            <div class="weather-card">
+                <h2 id="city-name">City Name</h2>
+                <img id="weather-icon" src="assets/images/weather-icon.png" alt="Weather Icon">
+                <p id="temperature">Temperature: --°C</p>
+                <p id="weather-condition">Weather: --</p>
+                <p id="humidity">Humidity: --%</p>
+                <p id="wind-speed">Wind: -- km/h</p>
+            </div>
+            <!-- 3-Day Forecast will be displayed here -->
+            <div class="forecast">
+                <h3>3-Day Forecast</h3>
+                <div id="forecast-days"></div>
+            </div>
+        </div>
+        <div id="recent-searches">
+            <h3>Recent Searches</h3>
+            <ul id="search-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
